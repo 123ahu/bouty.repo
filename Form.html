@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        label{font-weight: bold}
+        button{margin-left: 35%}
+
+    </style>
+
+
+</head>
+<body>
+
+<!--Start navbar-->
+
+<nav class="navbar bg-secondary-subtle justify-content-center navbar-expand-lg">
+    <ul class="navbar-nav">
+        <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="Gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="Services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="Cart.html" class="nav-link">Cart</a></li>
+        <li class="nav-item"><a href="Carousel.html" class="nav-link">Carousel</a></li>
+        <li class="nav-item"><a href="Tables.html" class="nav-link">Tables</a></li>
+        <li class="nav-item"><a href="Home.html" class="nav-link">Notifications <span class="badge bg-danger rounded-circle text-light">3</span></a></li>
+    </ul>
+</nav>
+
+<!-- End navbar-->
+
+<form action="" class="container mt-5">
+    <div class="row" >
+
+            <div class="col-5 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" required="required" class="form-control">
+            </div>
+            <div class="col-5 mb-3">
+               <label for="pwd" class="form-label">Password</label>
+               <input type="email" id="pwd" required="required" class="form-control">
+            </div>
+
+    </div>
+    <div class="row md-3">
+
+        <div class="col-10">
+               <label for="address" class="form-label">Address</label>
+               <input type="text" id="address" required="required" class="form-control" placeholder="1234 Mainstreet">
+            </div>
+
+    </div>
+    <div class="row md-3">
+
+        <div class="col-10">
+               <label for="address2" class="form-label">Address2</label>
+               <input type="text" id="address2" required="required" class="form-control" placeholder="Apartment, Studio or Floor">
+            </div>
+
+    </div>
+
+    <div class="row" >
+
+            <div class="col-5 mb-3">
+                <label for="city" class="form-label">City</label>
+                <input type="text" id="city" required="required" class="form-control">
+            </div>
+            <div class="col-4 mb-3">
+               <label for="state" class="form-label">State</label>
+                <select class="form-select" name="" id="state">
+                    <option value="state">..Choose..</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Europe">Europe</option>
+                    <option value="United States">United States</option>
+                </select>
+            </div>
+            <div class="col-1 mb-3">
+               <label for="zip" class="form-label">Zip</label>
+               <input type="text" id="zip" required="required" class="form-control">
+            </div>
+
+    </div>
+    <div class="mt-3">
+            <input type="checkbox" id="check" required="required" >
+            <label for="check">Check me out</label>
+    </div>
+    <button class="btn btn-primary mt-3">Sign in</button>
+
+
+</form>
+<!--new form-->
+<br><br><br><br><br>
+<div class="container">
+    <form action="">
+        <div class="row">
+            <div class="col-sm-2"><label for="Pname" class="form-label">Partner Name</label></div>
+            <div class="col-3"><input type="text" id="Pname" required="required" class="form-control"></div>
+            <div class="col-2"><label for="Pmail" class="form-label" >Partner Email ID</label></div>
+            <div class="col-3"><input type="email" id="Pmail" required="required" class="form-control"></div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <label for="Plname" class="form-label">Partner Legal Name</label>
+                <input type="text" id="Plname" required="required" class="form-control">
+            </div>
+            <div class="col-5">
+                <label for="Pnum" class="form-label" >Partner Mobile</label>
+                <input type="tel" id="Pnum" required="required" class="form-control"></div>
+            </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="Paddress" class="form-label">Partner Address</label>
+                <textarea name="" id="Paddress" cols="90" rows="3" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <label for="csd" class="form-label">Contract Start Date</label>
+                <input type="text" id="csd" required="required" placeholder="Date Start" class="form-control">
+            </div>
+            <div class="col-5">
+                 <label for="ced" class="form-label" >Contract Expiry Date</label>
+                <input type="text" id="ced" required="required" placeholder="Date End" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                    <label for="mnloan" class="form-label">Minimum Loan Amount</label>
+                    <input type="text" id="mnloan" required="required" class="form-control">
+                </div>
+                <div class="col-5">
+                    <label for="mxloan" class="form-label" >Maximum Loan Amount</label>
+                    <input type="text" id="mxloan" required="required" class="form-control">
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <label for="intr" class="form-label">Intrest Rate</label>
+                <input type="text" id="intr" required="required" class="form-control">
+            </div>
+            <div class="col-5">
+                <label for="depo" class="form-label" >Deposit Amount</label>
+                <input type="text" id="depo" required="required" class="form-control">
+            </div>
+        </div>
+<button class="btn btn-primary mt-2 align-content-center">Save</button>
+
+    </form>
+</div>
+
+</body>
+</html>
